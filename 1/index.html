@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some title</title>
+        <!-- Подключение стилей -->
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <h1>Ну заголовок и заголовок, че бубнить то? Кстати, это h1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5</h5>
+        <h6>Header 6</h6>
+        <p>Ну а это абзац...</p>
+        <p>И это тоже... А что ты хотел?</p>
+        <p>
+            Вот хочешь ты перенести текст на новую строку... :<br>
+            вот тебе на помощь тег br
+        </p>
+
+        <h1>Какая-тo КартинОчка</h1>
+        <!-- src, alt, wigth и тд - аттрибуты -->
+        <!-- src - путь к файлу, alt - alternative (текст, который будет показан вместо картинки, если она не загружена) -->
+        <!-- width и height - ширина и высота (px, %, rem) -->
+        <img src="./img/Some_cool_neon.jpg" alt="Сдесь могла быть ваша реклама, но она приняла Ислам" width="450px" height="250px">
+
+        <!-- Обычный список -->
+        <ul title="Welcome to список in HTML">
+            <li>
+                Элемент списка 1
+            </li>
+            <li>
+                Элемент списка 2 (вложенный список, а почему и нет?)
+                <ul>
+                    <li>Элемент вложенного списка 1</li>
+                    <li>Элемент вложенного списка 2</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Маркированный список -->
+        <ol title="маркированный списОчек">
+            <li>Элемент списка 1</li>
+            <li>
+                Элемент списка 2
+                <ol>
+                    <li>Элемент вложенного списка 1</li>
+                    <li>Элемент вложенного списка 2</li>
+                </ul>
+            </li>
+        </ol>
+        <!-- Note: списки, как и любые теги, могут быть вложенными -->
+
+        <pre>
+            тег pre:
+                кусок текста 'as is'
+                    со всеми отступами, которые есть в файле
+                уровень вложенности тоже учитывается
+        </pre>
+
+        <!-- Гиперссылки -->
+        <!-- href - ссылка для перенаправления -->
+        <a href="https://github.com/AlexCr4ckPentest" title="Tooltip (подсказОчка)">
+            А это гиперссылка, клик и попадешь на мой Github
+        </a>
+        <br>
+        <a href="./about.html" title="Show about info">Кликни сюды, чтобы проверить работу гиперссылок</a>
+        <br>
+
+        <a href="./img/Manjaro_Linux_2.png" title="Развернуть эту картинку во весь экран">
+            <img src="./img/Manjaro_Linux_2.png" alt="" width="100px" height="55px">
+        </a>
+
+        <br>
+
+        <!-- Откроет в новой вкладе -->
+        <a href="./img/Manjaro_Linux_2.png" title="Открыть эту картинку в новой вкладке" target="_blank">
+            <img src="./img/Manjaro_Linux_2.png" alt="" width="100px" height="55px">
+        </a>
+
+        <br>
+        <br>
+
+        <h1>Таблицы</h1>
+        <table>
+            <!-- Заголовок таблицы -->
+            <thead>
+                <!-- Тег tr (Table row) - строка таблицы -->
+                <tr>
+                    <!-- Тег td (Table head) - название столбца таблицы  -->
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <!-- Сама таблица -->
+            <tbody>
+                <tr>
+                    <!-- Тег td (Table data) - столбец таблицы  -->
+                    <td>Alexandr</td>
+                    <td>USA</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Germany</td>
+                    <td>49</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <br>
+        <br>
+
+        <!-- Форма ввода -->
+        <div title="Формы">
+            <h1>Формы</h1>
+            <form action="">
+                <div>
+                    <label for="">Name</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">City</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Age</label>
+                    <input type="text">
+                </div>
+            </form>
+    
+            <br>
+    
+            <!-- Multiline text input -->
+            <form action="" title="Многострочный ввод">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </form>
+    
+            <br>
+    
+            <!-- Кнопка -->
+            <form action="">
+                <input type="button" value="Какая-то кнопОчка">
+            </form>
+        </div>
+    </body>
+</html>
