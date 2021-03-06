@@ -1,0 +1,51 @@
+.simple_square {
+    border: 10px black solid;
+    width: max-content;
+    height: 100px;
+    background-color: yellowgreen;
+    padding: 10px;
+}
+
+
+
+main {
+    display: flex;
+}
+
+
+
+.some_div_1 {
+    width: max-content;
+    border: 5px black solid;
+    margin: 10px;
+    background-color: forestgreen;
+    display: flex;
+}
+
+.nested_some_div_left_1, .nested_some_div_left_2 {
+    padding: 50px 40px;
+    margin: 10px 10px;
+}
+
+.nested_some_div_left_1 {
+    border: 2px dashed black;
+    
+}
+
+.nested_some_div_left_2 {
+    border: 2px dotted red;
+}
+
+
+
+.some_div_2 {
+    border: 2px blue solid;
+    display: flex;
+    margin: 10px;
+}
+
+.nested_some_div_right_1, .nested_some_div_right_2 {
+    border: 5px darkorange dashed;
+    margin: 10px;
+    padding: 15px;
+}
