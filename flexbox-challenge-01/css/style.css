@@ -1,0 +1,87 @@
+/* Global styles
+ * for <body>, <h1>, <h2>, <h3>, <p>
+*/
+body
+, h1
+, h2
+, h3
+, p {
+    margin: 0;
+}
+
+
+/* Some helpers */
+.text__center {
+    text-align: center;
+}
+
+.bg__main {
+    background-color: #f3eed9;
+}
+
+.bg__accent {
+    background-color: #824936;
+}
+
+.bg__dark {
+    background-color: #222c2a;
+}
+
+
+
+.split {
+    display: flex;
+    flex-direction: column; /* Same as without flex */
+}
+
+
+
+/* Dynamically updating selectors behavior
+ *
+ * @media (conditions) {
+ *     slector {
+          <redefine options>
+          ...
+ *     }
+ * }
+*/
+
+/* If window min-width >= 375px
+ * Change flex-direction from column to row
+*/
+@media (min-width: 375px) {
+    .split {
+        flex-direction: row;
+    }
+}
+
+
+
+/* Add padding in section sec_2 if min-width >= 600px */
+@media (min-width: 600px) {
+    .sec_2 {
+        padding: 20px;
+    }
+}
+
+
+
+.sec_2__bg, .sec_3__bg {
+    height: 100px;
+    width: 200px;
+    background-color: #ccc;
+    border: 1px solid black;
+}
+
+
+
+.container {
+    margin: auto;
+    width: 75%;
+}
+
+
+
+.container__narrow {
+    width: 60%;
+}
