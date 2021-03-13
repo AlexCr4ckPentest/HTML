@@ -10,9 +10,14 @@ body
 }
 
 
+
 /* Some helpers */
 .text__center {
     text-align: center;
+}
+
+.container__narrow {
+    width: 60%;
 }
 
 .bg__main {
@@ -32,6 +37,26 @@ body
 .split {
     display: flex;
     flex-direction: column; /* Same as without flex */
+}
+
+.sec_2 {
+    padding-bottom: 6%;
+}
+
+.sec_3 {
+    padding-top: 6%;
+}
+
+.sec_2__bg, .sec_3__bg {
+    height: 100px;
+    width: 250px;
+    background-color: #ccc;
+    border: 1px solid black;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
 }
 
 
@@ -55,33 +80,12 @@ body
     }
 }
 
-
-
 /* Add padding in section sec_2 if min-width >= 600px */
 @media (min-width: 600px) {
-    .sec_2 {
-        padding: 20px;
+    .header, .sec_1 {
+        padding: 9%;
     }
-}
-
-
-
-.sec_2__bg, .sec_3__bg {
-    height: 100px;
-    width: 200px;
-    background-color: #ccc;
-    border: 1px solid black;
-}
-
-
-
-.container {
-    margin: auto;
-    width: 75%;
-}
-
-
-
-.container__narrow {
-    width: 60%;
+    .sec_2, .sec_3 {
+        padding: 6% 17% 6% 17%;
+    }
 }
