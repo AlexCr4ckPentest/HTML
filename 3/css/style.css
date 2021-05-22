@@ -1,0 +1,30 @@
+.body {
+    background-color: gray;
+}
+
+.counter {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15% 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 75px 75px;
+}
+
+.counter__label {
+    font-size: 28px;
+    color: crimson;
+}
+
+.counter__value {
+    font-size: 24px;
+    color: crimson;
+}
