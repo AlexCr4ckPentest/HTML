@@ -1,0 +1,9 @@
+.header {
+    border-style: solid;
+    background-color: green;
+    height: 242px;
+}
+
+.copyright {
+    background-color: lightgray;
+}
