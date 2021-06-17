@@ -1,9 +1,27 @@
-.header {
+header {
     border-style: solid;
     background-color: green;
-    height: 242px;
+    height: 360px;
 }
 
 .copyright {
     background-color: lightgray;
+}
+
+
+.grid_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_main__left, .grid_main__right {
+    border: solid black;
+    height: 148px;
+}
+
+@media (max-width: 360px) {
+    .grid_main {
+        display: flex;
+        flex-direction: column;
+    }
 }
