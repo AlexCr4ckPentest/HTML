@@ -1,26 +1,44 @@
 header {
-    border-style: solid;
-    background-color: green;
-    height: 360px;
+    height: 350px;
+    background-image: url("../img/header_image.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.copyright {
-    background-color: lightgray;
-}
-
-
-.grid_main {
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.grid_main__left, .grid_main__right {
-    border: solid black;
-    height: 148px;
+.grid__l-elem, .grid__r-elem {
+    border: dashed red;
+    height: 428px;
 }
 
+footer {
+    padding-top: 16px;
+}
+
+.copyright {
+    margin: 0px 28px;
+    width: max-content;
+}
+
+#main__section-1, #main__section-2, #main__section-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+
 @media (max-width: 360px) {
-    .grid_main {
+    header {
+        height: 256px;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid {
         display: flex;
         flex-direction: column;
     }
