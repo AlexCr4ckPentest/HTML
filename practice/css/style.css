@@ -13,6 +13,19 @@ header {
 .grid__l-elem, .grid__r-elem {
     border: dashed red;
     height: 428px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product_image {
+    height: 316px;
+    margin: 30px 24px 0px;
+    border: solid black;
 }
 
 footer {
