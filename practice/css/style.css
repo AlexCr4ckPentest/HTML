@@ -5,6 +5,10 @@ header {
     background-position: center;
 }
 
+._carousel_view {
+    background-color: gray;
+}
+
 main {
     padding-top: 2rem;
     background-color: lightskyblue;
