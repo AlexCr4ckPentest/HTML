@@ -33,11 +33,6 @@ footer {
     width: max-content;
 }
 
-#main__section-1, #main__section-2, #main__section-3 {
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
 
 
 @media (max-width: 360px) {
@@ -46,7 +41,7 @@ footer {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 750px) {
     .grid {
         display: flex;
         flex-direction: column;
