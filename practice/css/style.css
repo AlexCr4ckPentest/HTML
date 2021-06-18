@@ -17,6 +17,7 @@ main {
 
 .grid__l-elem, .grid__r-elem {
     /* border: dashed red; */
+    padding-top: 55px;
     height: 428px;
     display: flex;
     flex-direction: column;
