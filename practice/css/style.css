@@ -11,10 +11,47 @@ header {
     font-size: 48px;
 }
 
-.view {
-    align-items: center;
-    height: 355px;
+
+
+.heading-header {
+    padding-bottom: 18px;
+    text-align: center;
 }
+
+.heading {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    border-top: solid black 4px;
+    border-bottom: solid black 4px;
+    align-items: center;
+    background-image: url("../img/desert-sky.jpg");
+    background-size: cover;
+    height: max-content;
+}
+
+.heading-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-grid-top, .heading-grid-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-grid-top {
+    padding-bottom: 56px;
+}
+
+.heading-grid-bottom {
+    padding-top: 56px;
+}
+
+.heading-grid-item {
+    text-align: center;
+}
+
+
 
 main {
     padding-top: 3rem;
@@ -22,20 +59,20 @@ main {
     background-image: url("../img/main_backgrounds/2.png");
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom: solid black 5px;
 }
 
-.grid {
+.main-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.grid__l-elem, .grid__r-elem {
-    /* border: dashed red; */
+.main-grid-item {
     padding-top: 55px;
-    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: max-content;
 }
 
 footer {
@@ -52,9 +89,13 @@ footer {
 
 @media (max-width: 750px) {
     .header-text {
-        font-size: 32px;
+        font-size: 30px;
     }
-    .grid {
+    .main-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading-grid-top, .heading-grid-bottom {
         display: flex;
         flex-direction: column;
     }
