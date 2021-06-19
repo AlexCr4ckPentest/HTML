@@ -1,6 +1,6 @@
 header {
-    padding-top: 100px;
-    padding-bottom: 125px;
+    padding-top: 74px;
+    padding-bottom: 128px;
 }
 
 .header-background {
@@ -10,7 +10,9 @@ header {
     height: max-content;
 }
 
-.header-text { font-size: 48px; }
+.header-text {
+    font-size: 48px;
+}
 
 
 
@@ -56,7 +58,6 @@ main {
     background-image: url("../img/main_backgrounds/2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: solid black 5px;
 }
 
 .main-grid {
@@ -81,19 +82,15 @@ main {
 
 #arch-based-distros,
 #debian-based-distros,
-#independent-distros,
+#independently-distros,
 #maybe-interesting {
     padding-top: 56px;
 }
 
-footer {
-    height: max-content;
-    background-image: url("../img/header_image.jpg");
-}
 
-.copyright {
-    margin: 0px 28px;
-    width: max-content;
+
+footer {
+    background-image: url("../img/header_image.jpg");
 }
 
 
@@ -111,6 +108,14 @@ footer {
     .heading {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    .heading-grid-top {
+        padding-bottom: 24px;
+    }
+
+    .heading-grid-bottom {
+        padding-top: 24px;
     }
 
     .heading-grid-top, .heading-grid-bottom {
