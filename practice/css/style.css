@@ -11,14 +11,16 @@ header {
 }
 
 .view {
+    align-items: center;
     height: 355px;
 }
 
 main {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-image: url("../img/main_backgrounds/1.jpg");
+    background-image: url("../img/main_backgrounds/2.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .grid {
