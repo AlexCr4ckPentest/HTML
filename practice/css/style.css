@@ -87,6 +87,10 @@ main {
     padding-top: 56px;
 }
 
+.card {
+    border: 0px;
+}
+
 
 
 footer {
