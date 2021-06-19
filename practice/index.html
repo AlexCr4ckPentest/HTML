@@ -24,39 +24,45 @@
             </div>
         </nav>
 
-        <header>
-            <p class="text-center text-light header-text">"Software is like sex : it's better when it's free..."<br>(C) Linus Torvalds</p>
-        </header>
-
-        <section class="heading text-light" id="why-opensource">
-            <div class="heading-grid-top container-fluid">
-                <div class="heading-grid-item"><h3>Freedom</h3></div>
-                <div class="heading-grid-item"><h3>Security</h3></div>
-                <div class="heading-grid-item"><h3>Quality</h3></div>
-            </div>
-            <div class="heading-header"><h1>Why open source is good?</h1></div>
-            <div class="heading-grid-bottom container-fluid">
-                <div class="heading-grid-item"><h3>Crossplatform</h3></div>
-                <div class="heading-grid-item"><h3>Interoperability</h3></div>
-                <div class="heading-grid-item"><h3>Auditability</h3></div>
-            </div>
+        <section class="header-background">
+            <header>
+                <p class="text-center text-light header-text">"Software is like sex: it's better when it's free..."<br>(C) Linus Torvalds</p>
+            </header>
+    
+            <section class="heading text-light" id="why-opensource">
+                <div class="heading-grid-top container-fluid">
+                    <div class="heading-grid-item"><h3>Freedom</h3></div>
+                    <div class="heading-grid-item"><h3>Security</h3></div>
+                    <div class="heading-grid-item"><h3>Quality</h3></div>
+                </div>
+                <div class="heading-header"><h1>Why open source is good?</h1></div>
+                <div class="heading-grid-bottom container-fluid">
+                    <div class="heading-grid-item"><h3>Crossplatform</h3></div>
+                    <div class="heading-grid-item"><h3>Interoperability</h3></div>
+                    <div class="heading-grid-item"><h3>Auditability</h3></div>
+                </div>
+            </section>
         </section>
+
+
 
         <main id="list-distros">
             <h1 class="text-center text-light">List of GNU/Linux distributions recomend by me</h1>
-            <div class="">
-                <!-- Arch based -->
-                <section class="main-grid" id="arch-based-distros">
+
+            <!-- Arch based -->
+            <section id="arch-based-distros">
+                <h2 class="text-center text-light">Arch based</h2>
+                <div class="main-grid container">
                     <div class="main-grid-item">
                         <div class="card text-center bg-dark text-light" style="width: 18rem;">
                             <img class="card-img-top" src="img/manjaro-small.png" alt="Manjaro Linux">
                             <div class="card-body">
-                              <h5 class="card-title">Manjaro Linux</h5>
-                              <p class="card-text">Fast, user-friendly, desktop-oriented operating system based on Arch Linux. Key features - automatic hardware detection, stable rolling-release model, ability to install multiple kernels, special Bash scripts for managing graphics drivers and extensive desktop configurability.</p>
-                              <p>Desktop: Awesome, bspwm, Budgie, Cinnamon, GNOME, i3, KDE Plasma, LXQt, MATE, Openbox, Xfce</p>
-                              <p>Category: Desktop, Live Medium, Raspberry Pi</p>
-                              <a href="https://distrowatch.com/table.php?distribution=manjaro" class="btn btn-primary">See on distrowatch</a><br><br>
-                              <a href="https://manjaro.org/" class="btn btn-primary">Official site</a>
+                                <h5 class="card-title">Manjaro Linux</h5>
+                                <p class="card-text">Fast, user-friendly, desktop-oriented operating system based on Arch Linux. Key features - automatic hardware detection, stable rolling-release model, ability to install multiple kernels, special Bash scripts for managing graphics drivers and extensive desktop configurability.</p>
+                                <p>Desktop: Awesome, bspwm, Budgie, Cinnamon, GNOME, i3, KDE Plasma, LXQt, MATE, Openbox, Xfce</p>
+                                <p>Category: Desktop, Live Medium, Raspberry Pi</p>
+                                <a href="https://distrowatch.com/table.php?distribution=manjaro" class="btn btn-primary">See on distrowatch</a><br><br>
+                                <a href="https://manjaro.org/" class="btn btn-primary">Official site</a>
                             </div>
                         </div>
                     </div>
@@ -86,10 +92,13 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- Debian based -->
-                <section class="main-grid" id="debian-based-distros">
+            <!-- Debian based -->
+            <section id="debian-based-distros">
+                <h2 class="text-center text-light">Debian based</h2>
+                <div class="main-grid container">
                     <div class="main-grid-item">
                         <div class="card text-center bg-dark text-light" style="width: 18rem;">
                             <img class="card-img-top" src="img/mx-small.png" alt="MX Linux">
@@ -118,31 +127,34 @@
                     </div>
                     <div class="main-grid-item">
                         <div class="card text-center bg-dark text-light" style="width: 18rem;">
-                            <img class="card-img-top" src="img/kali-small.png" alt="Kali Linux">
+                            <img class="card-img-top" src="img/parrot-small.png" alt="Parrot Security OS">
                             <div class="card-body">
-                              <h5 class="card-title">Kali Linux</h5>
-                              <p class="card-text">Kali Linux (formerly known as BackTrack) is a Debian-based distribution with a collection of security and forensics tools.</p>
-                              <p>Desktop: Enlightenment, GNOME, KDE Plasma, LXDE, MATE, Xfce</p>
-                              <p>Category: Data Rescue, Forensics, Live Medium, Raspberry Pi, Security</p>
-                              <a href="https://distrowatch.com/table.php?distribution=kali" class="btn btn-primary">See on distrowatch</a><br><br>
-                              <a href="https://www.kali.org/" class="btn btn-primary">Official site</a>
+                              <h5 class="card-title">Parrot (formerly Parrot Security OS)</h5>
+                              <p class="card-text">Security-oriented distribution featuring a collection of utilities designed for penetration testing, computer forensics, reverse engineering, hacking, privacy, anonymity and cryptography.</p>
+                              <p>Desktop: KDE Plasma, MATE</p>
+                              <p>Category: Forensics, Live Medium, Security</p>
+                              <a href="https://distrowatch.com/table.php?distribution=parrot" class="btn btn-primary">See on distrowatch</a><br><br>
+                              <a href="https://www.parrotlinux.org/" class="btn btn-primary">Official site</a>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <!-- Independent distros -->
-                <section class="main-grid" id="independent-distros">
+            <!-- Independent distros -->
+            <section id="independent-distros">
+                <h2 class="text-center text-light">Independent distros</h2>
+                <div class="main-grid container">
                     <div class="main-grid-item">
                         <div class="card text-center bg-dark text-light" style="width: 18rem;">
                             <img class="card-img-top" src="img/arch-small.png" alt="Arch Linux">
                             <div class="card-body">
-                              <h5 class="card-title">Arch Linux</h5>
-                              <p class="card-text">Independently developed, x86_64-optimised Linux distribution targeted at competent Linux users. It uses 'pacman', its home-grown package manager, to provide updates to the latest software applications with full dependency tracking.</p>
-                              <p>Desktop: Cinnamon, Enlightenment, GNOME, KDE, LXDE, MATE, Xfce</p>
-                              <p>Category: Desktop, Server</p>
-                              <a href="https://distrowatch.com/table.php?distribution=arch" class="btn btn-primary">See on distrowatch</a><br><br>
-                              <a href="https://archlinux.org/" class="btn btn-primary">Official site</a>
+                                <h5 class="card-title">Arch Linux</h5>
+                                <p class="card-text">Independently developed, x86_64-optimised Linux distribution targeted at competent Linux users. It uses 'pacman', its home-grown package manager, to provide updates to the latest software applications with full dependency tracking.</p>
+                                <p>Desktop: Cinnamon, Enlightenment, GNOME, KDE, LXDE, MATE, Xfce</p>
+                                <p>Category: Desktop, Server</p>
+                                <a href="https://distrowatch.com/table.php?distribution=arch" class="btn btn-primary">See on distrowatch</a><br><br>
+                                <a href="https://archlinux.org/" class="btn btn-primary">Official site</a>
                             </div>
                         </div>
                     </div>
@@ -150,12 +162,12 @@
                         <div class="card text-center bg-dark text-light" style="width: 18rem;">
                             <img class="card-img-top" src="img/debian-small.png" alt="Debian">
                             <div class="card-body">
-                              <h5 class="card-title">Debian</h5>
-                              <p class="card-text">Association of individuals who have made common cause to create a free operating system. Debian comes with over 50,000 packages - all of it free.</p>
-                              <p>Desktop: AfterStep, Awesome, Blackbox, Cinnamon, Fluxbox, flwm, FVWM, GNOME, i3, IceWM, ion, JWM, KDE, LXDE, LXQt, MATE, Openbox, pekwm, Ratpoison, WMaker, XBMC, Xfce</p>
-                              <p>Category: Desktop, Server</p>
-                              <a href="https://distrowatch.com/table.php?distribution=debian" class="btn btn-primary">See on distrowatch</a><br><br>
-                              <a href="http://www.debian.org/" class="btn btn-primary">Official site</a>
+                                <h5 class="card-title">Debian</h5>
+                                <p class="card-text">Association of individuals who have made common cause to create a free operating system. Debian comes with over 50,000 packages - all of it free.</p>
+                                <p>Desktop: AfterStep, Awesome, Blackbox, Cinnamon, Fluxbox, flwm, FVWM, GNOME, i3, IceWM, ion, JWM, KDE, LXDE, LXQt, MATE, Openbox, pekwm, Ratpoison, WMaker, XBMC, Xfce</p>
+                                <p>Category: Desktop, Server</p>
+                                <a href="https://distrowatch.com/table.php?distribution=debian" class="btn btn-primary">See on distrowatch</a><br><br>
+                                <a href="http://www.debian.org/" class="btn btn-primary">Official site</a>
                             </div>
                         </div>
                     </div>
@@ -163,17 +175,63 @@
                         <div class="card text-center bg-dark text-light" style="width: 18rem;">
                             <img class="card-img-top" src="img/fedora-small.png" alt="Fedora">
                             <div class="card-body">
-                              <h5 class="card-title">Fedora</h5>
-                              <p class="card-text">Linux distribution developed by the community-supported Fedora Project and owned by Red Hat. Fedora contains software distributed under a free and open-source license and aims to be on the leading edge of such technologies.</p>
-                              <p>Desktop: Awesome, Cinnamon, Enlightenment, i3, GNOME, KDE Plasma, LXDE, LXQt, MATE, Openbox, Pantheon, Ratpoison, Xfce</p>
-                              <p>Category: Desktop, Server, Live Medium</p>
-                              <a href="https://distrowatch.com/table.php?distribution=fedora" class="btn btn-primary">See on distrowatch</a><br><br>
-                              <a href="https://getfedora.org/" class="btn btn-primary">Official site</a>
+                                <h5 class="card-title">Fedora</h5>
+                                <p class="card-text">Linux distribution developed by the community-supported Fedora Project and owned by Red Hat. Fedora contains software distributed under a free and open-source license and aims to be on the leading edge of such technologies.</p>
+                                <p>Desktop: Awesome, Cinnamon, Enlightenment, i3, GNOME, KDE Plasma, LXDE, LXQt, MATE, Openbox, Pantheon, Ratpoison, Xfce</p>
+                                <p>Category: Desktop, Server, Live Medium</p>
+                                <a href="https://distrowatch.com/table.php?distribution=fedora" class="btn btn-primary">See on distrowatch</a><br><br>
+                                <a href="https://getfedora.org/" class="btn btn-primary">Official site</a>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+
+            <!-- May be interesting -->
+            <section id="maybe-interesting">
+                <h2 class="text-center text-light">May be interesting</h2>
+                <div class="main-grid container">
+                    <div class="main-grid-item">
+                        <div class="card text-center bg-dark text-light" style="width: 18rem;">
+                            <img class="card-img-top" src="img/gentoo-small.png" alt="Gentoo">
+                            <div class="card-body">
+                                <h5 class="card-title">Gentoo Linux</h5>
+                                <p class="card-text">Versatile and fast, completely free Linux distribution geared towards developers and network professionals. Unlike other distros, Gentoo Linux has an advanced package management system called Portage.</p>
+                                <p>Desktop: Awesome, Cinnamon, Enlightenment, i3, GNOME, KDE Plasma, LXDE, LXQt, MATE, Openbox, Pantheon, Ratpoison, Xfce</p>
+                                <p>Category: Desktop, Server, Source-based</p>
+                                <a href="https://distrowatch.com/table.php?distribution=gentoo" class="btn btn-primary">See on distrowatch</a><br><br>
+                                <a href="http://www.gentoo.org/" class="btn btn-primary">Official site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-grid-item">
+                        <div class="card text-center bg-dark text-light" style="width: 18rem;">
+                            <img class="card-img-top" src="img/nixos-small.png" alt="NixOS">
+                            <div class="card-body">
+                                <h5 class="card-title">NixOS</h5>
+                                <p class="card-text">Independently GNU/Linux distribution that aims to improve the state of the art in system configuration management. In NixOS, the entire operating system, including the kernel, applications, system packages and configuration files, are built by the Nix package manager.</p>
+                                <p>Desktop: Awesome, Enlightenment, Fluxbox, GNOME, i3, IceWM, KDE Plasma, Ratpoison, Xfce</p>
+                                <p>Category: Desktop, Education, Live Medium, Server</p>
+                                <a href="https://distrowatch.com/table.php?distribution=nixos" class="btn btn-primary">See on distrowatch</a><br><br>
+                                <a href="http://nixos.org/" class="btn btn-primary">Official site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-grid-item">
+                        <div class="card text-center bg-dark text-light" style="width: 18rem;">
+                            <img class="card-img-top" src="img/slackware-small.png" alt="Slackware Linux">
+                            <div class="card-body">
+                                <h5 class="card-title">Slackware Linux</h5>
+                                <p class="card-text">advanced Linux operating system, designed with the twin goals of ease of use and stability as top priorities. Including the latest popular software while retaining a sense of tradition, providing simplicity and ease of use alongside flexibility and power, Slackware brings the best of all worlds to the table.</p>
+                                <p>Desktop: Blackbox, Fluxbox, FVWM, KDE, WMaker, Xfce</p>
+                                <p>Category: Desktop, Server</p>
+                                <a href="https://distrowatch.com/table.php?distribution=slackware" class="btn btn-primary">See on distrowatch</a><br><br>
+                                <a href="http://www.slackware.com/" class="btn btn-primary">Official site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
